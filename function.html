@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> functions Task</h1>
+</body>
+<script>
+   function addNumbers(a, b) {
+    return a + b;
+}
+
+let result = add(10, 5);
+
+console.log(result);
+
+function checkNumber(num) {
+
+    if (num % 2 == 0) {
+        return "Even Number";
+    } 
+    else {
+        return "Odd Number";
+    }
+}
+
+console.log(checkNumber(10));
+console.log(checkNumber(7));
+
+function findLargest(a,b,c){
+    if(a>=b && a>=c){
+        return a;
+    }
+    if(b>=a && b>=c){
+        return b;
+    }
+    else{
+        return c;
+    }
+}
+console.log(findLargest(10,15,25));
+
+function factorial(num){
+    let result=1;
+    for(let i=1;i<=num;i++){
+        result=result*i;
+    }
+    return result;
+}
+   console.log(factorial(5));
+
+   function reverseString(str){
+    return str.split("").reverse().join("");
+   }
+   console.log(reverseString("javascript"));
+
+   function countVowels(str){
+    let count=0;
+    for(let i=0; i<str.length;i++){
+        let ch=str[i].toLowerCase();
+        if(
+            ch==="a"||
+            ch==="e"||
+            ch==="i"||
+            ch==="o"||
+            ch==="u"
+        ){
+            count++;
+        }
+    }
+    return count;
+   }
+   console.log(countVowels("JavaScript"));
+</script>
+</html>
